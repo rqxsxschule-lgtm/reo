@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Nutzungsbedingungen — Reo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* Reused dashboard styles (trimmed) */
+    :root{--bg:#060203;--panel:rgba(11,6,7,0.92);--panel-2:rgba(7,2,4,0.98);--line:rgba(255,255,255,0.08);--text:#fff4f5;--muted:#b69499;--brand:#ff5067}
+    *{box-sizing:border-box}
+    body{margin:0;color:var(--text);font-family:"Manrope",sans-serif;background:linear-gradient(180deg,#030102 0%,#080304 46%,#050203 100%)}
+    .frame{width:min(1100px,calc(100% - 24px));margin:28px auto;border:1px solid var(--line);border-radius:20px;overflow:hidden}
+    .topbar{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid var(--line);}
+    .brand strong{font-family:"Sora",sans-serif;font-size:1.12rem}
+    .nav a{color:var(--muted);text-decoration:none;margin-left:10px}
+    .content{padding:22px}
+    .panel{border:1px solid var(--line);border-radius:12px;padding:18px;background:linear-gradient(180deg,var(--panel),var(--panel-2));}
+    h1{margin:0 0 8px;font-family:"Sora",sans-serif}
+    p.lead{color:var(--muted)}
+    article{color:#dbeafe;line-height:1.6}
+    *{user-select:text}
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <div class="topbar">
+      <div class="brand"><strong>Reo</strong><div style="font-size:12px;color:var(--muted)">Nutzungsbedingungen</div></div>
+      <nav class="nav">
+        <a href="index.html">Start</a>
+        <a href="privacy.html">Datenschutz</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+    <div class="content">
+      <div class="panel">
+        <h1>Nutzungsbedingungen</h1>
+        <p class="lead">Nachfolgend finden Sie die Nutzungsbedingungen. Ersetzen Sie diesen Beispieltext durch Ihre vollständigen Bedingungen.</p>
+        <article>
+          <h2>1. Allgemeines</h2>
+          <p>Diese Nutzungsbedingungen regeln die Verwendung des Dienstes. Durch die Nutzung erklären Sie sich mit diesen Bedingungen einverstanden.</p>
+          <h2>2. Dienste</h2>
+          <p>Der Dienst wird wie bereitgestellt angeboten. Änderungen können jederzeit vorgenommen werden.</p>
+          <h2>3. Haftung</h2>
+          <p>Sofern gesetzlich zulässig, ist die Haftung des Anbieters auf direkte Schäden begrenzt.</p>
+          <p style="color:var(--muted);font-size:13px;margin-top:14px">(Dies ist ein Platzhaltertext — fügen Sie hier Ihre rechtlich geprüften Texte ein.)</p>
+        </article>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('dragstart', e => e.preventDefault());
+    document.querySelectorAll('*').forEach(n => n.contentEditable = 'false');
+  </script>
+</body>
+</html>

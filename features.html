@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Funktionen — Reo Discord Bot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Inter',sans-serif;background:linear-gradient(135deg,#0a0a0a 0%,#1a1a2e 50%,#0f0f1a 100%);color:#fff;line-height:1.5;}
+    .navbar{background:rgba(10,10,15,0.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,0.1);padding:1rem 2rem;position:sticky;top:0;z-index:100;}
+    .nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}
+    .logo{font-size:1.8rem;font-weight:800;background:linear-gradient(135deg,#ff6b6b,#ff2d2d);-webkit-background-clip:text;background-clip:text;color:transparent;}
+    .nav-links{display:flex;gap:2rem;align-items:center;}
+    .nav-links a{color:#a0a0b0;text-decoration:none;font-weight:500;transition:color .3s;}
+    .nav-links a:hover{color:#ff6b6b;}
+    .btn-login{background:linear-gradient(135deg,#ff6b6b,#ff2d2d);padding:0.5rem 1.5rem;border-radius:8px;color:#fff!important;}
+    .container{max-width:1200px;margin:0 auto;padding:4rem 2rem;}
+    h1{font-size:3rem;margin-bottom:1rem;background:linear-gradient(135deg,#fff,#ff6b6b);-webkit-background-clip:text;background-clip:text;color:transparent;}
+    .feature-detail{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:2rem;margin-bottom:2rem;}
+    .feature-detail h2{color:#ff6b6b;margin-bottom:1rem;}
+    .feature-detail p{color:#a0a0b0;line-height:1.8;}
+    .footer{background:rgba(10,10,15,0.95);border-top:1px solid rgba(255,255,255,0.1);padding:3rem 2rem;margin-top:4rem;}
+    .footer-content{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;}
+    .footer-section a{color:#a0a0b0;text-decoration:none;display:block;margin-bottom:0.5rem;}
+    .footer-section a:hover{color:#ff6b6b;}
+    .copyright{text-align:center;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1);color:#a0a0b0;}
+    @media (max-width:768px){h1{font-size:2rem;}.nav-links{gap:1rem;}}
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">REO</div>
+      <div class="nav-links">
+        <a href="index.html">Start</a>
+        <a href="features.html">Funktionen</a>
+        <a href="tos.html">AGB</a>
+        <a href="privacy.html">Datenschutz</a>
+        <a href="support.html">Support</a>
+        <a href="http://localhost:25572" class="btn-login">Dashboard</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Alle Funktionen im Überblick</h1>
+    <div class="feature-detail">
+      <h2>🛡️ Anti-Nuke & Sicherheit</h2>
+      <p>Automatischer Schutz vor Massen-Bans, Channel-Löschungen, Rollen-Änderungen und anderen schädlichen Aktionen. Individuelle Whitelist für vertrauenswürdige Mitglieder.</p>
+    </div>
+    <div class="feature-detail">
+      <h2>🎵 Musik-System</h2>
+      <p>Hochwertige Musikwiedergabe mit Playlists, Loop-Funktion, Equalizer und Unterstützung für YouTube, Spotify und SoundCloud.</p>
+    </div>
+    <div class="feature-detail">
+      <h2>🎫 Ticket-System</h2>
+      <p>Professionelles Support-Ticket-System mit benutzerdefinierten Kategorien, Transkripten, Limitierungen und Team-Übersicht.</p>
+    </div>
+    <div class="feature-detail">
+      <h2>💰 Wirtschaft & Shop</h2>
+      <p>Tägliche Belohnungen, benutzerdefinierte Shop-Items, virtuelle Währung und Transfers zwischen Mitgliedern.</p>
+    </div>
+    <div class="feature-detail">
+      <h2>📋 Moderation</h2>
+      <p>Auto-Moderation mit Wortfiltern, Caps-Lock-Erkennung, Spam-Schutz und individuellen Strafen (Verwarnungen, Mute, Kick, Ban).</p>
+    </div>
+    <div class="feature-detail">
+      <h2>🎁 Giveaways</h2>
+      <p>Professionelle Giveaways mit Gewinnernachweis, Anforderungssystem (Rollen, Server-Verweildauer) und automatischer Ziehung.</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section"><h4>Reo Bot</h4><p>Der zuverlässige Discord Bot für deine Community.</p></div>
+      <div class="footer-section"><h4>Links</h4><a href="index.html">Startseite</a><a href="tos.html">AGB</a><a href="privacy.html">Datenschutz</a></div>
+      <div class="footer-section"><h4>Rechtliches</h4><a href="tos.html">Nutzungsbedingungen</a><a href="privacy.html">Datenschutzerklärung</a></div>
+    </div>
+    <div class="copyright">© 2026 Reo Bot. Alle Rechte vorbehalten.</div>
+  </footer>
+</body>
+</html>
