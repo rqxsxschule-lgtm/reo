@@ -16,6 +16,9 @@ class BotConfigClass:
     DISCORD_CLIENT_SECRET = os.getenv("DISCORD_CLIENT_SECRET", "")
     DASHBOARD_SECRET = os.getenv("DASHBOARD_SECRET", "")
     DASHBOARD_BASE_URL = os.getenv("DASHBOARD_BASE_URL", f"http://localhost:{WEB_PORT}")
+    # Comma-separated list of guild IDs that are explicitly allowed (whitelist)
+    _allowed_guilds_env = os.getenv("ALLOWED_GUILD_IDS", "")
+    ALLOWED_GUILD_IDS = [int(g.strip()) for g in _allowed_guilds_env.split(",") if g.strip().isdigit()]
     API_HOST = WEB_HOST
     API_PORT = WEB_PORT
     SYNC_EMOJIS = os.getenv("SYNC_EMOJIS", "True").lower() == "true"

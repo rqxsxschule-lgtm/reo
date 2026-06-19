@@ -22,16 +22,23 @@ class on_guild_join(commands.Cog):
     async def send_join_server_notification(self, guild:discord.Guild):
         try:
             logger.info(f"Joined Guild {guild.name} ({guild.id})")
-            if self.bot.cache.ban_data.get('guilds').get(str(guild.id)):
-                await guild.owner.send(embed=discord.Embed(
-                    title=f"Your Guild {guild.name} is banned from using {self.bot.user.name}",
-                    description=f"If you think this is a mistake, please join our Support Server and contact the Management Team",
-                    color=color.red
-                ),
-                view=discord.ui.View().add_item(discord.ui.Button(label="Support Server",url=self.bot.urls.SUPPORT_SERVER,style=discord.ButtonStyle.link,emoji=self.bot.emoji.SUPPORT))
-                )
-                await guild.leave()
-                return logger.warning(f"Guild {guild.name} ({guild.id}) is banned from using {self.bot.user.name}")
+            # If there's an explicit allowed guilds whitelist, skip ban check for those guilds
+            allowed = getattr(self.bot.BotConfig, 'ALLOWED_GUILD_IDS', []) or []
+            if str(guild.id) not in ['']:
+                # if guild is whitelisted, do not treat as banned
+                if guild.id in allowed:
+                    logger.info(f"Guild {guild.name} ({guild.id}) is whitelisted; skipping ban check")
+                else:
+                    if self.bot.cache.ban_data.get('guilds').get(str(guild.id)):
+                        await guild.owner.send(embed=discord.Embed(
+                            title=f"Your Guild {guild.name} is banned from using {self.bot.user.name}",
+                            description=f"If you think this is a mistake, please join our Support Server and contact the Management Team",
+                            color=color.red
+                        ),
+                        view=discord.ui.View().add_item(discord.ui.Button(label="Support Server",url=self.bot.urls.SUPPORT_SERVER,style=discord.ButtonStyle.link,emoji=self.bot.emoji.SUPPORT))
+                        )
+                        await guild.leave()
+                        return logger.warning(f"Guild {guild.name} ({guild.id}) is banned from using {self.bot.user.name}")
 
 
             await asyncio.sleep(5)
