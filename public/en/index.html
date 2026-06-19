@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Darian Bot</title>
+    <link rel="stylesheet" href="/assets/dashboard.css">
+  </head>
+  <body>
+    <div class="frame">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-link" data-page="home"><strong data-cfg="brand">Darian Bot</strong></span>
+          <a class="brand-link" data-link="dashboard" data-i18n="dashboardLabel">Dashboard</a>
+        </div>
+        <div class="lang-switch">
+          <a id="lang-en" href="/en/">EN</a>
+          <a id="lang-de" href="/de/">DE</a>
+        </div>
+        <div class="account">
+          <div>
+            <span data-i18n="heroText">all in one bot for darian!</span>
+          </div>
+        </div>
+      </header>
+      <main class="content">
+        <section class="hero">
+          <div class="panel">
+            <h1 data-cfg="brand">Darian Bot</h1>
+            <p class="muted" data-i18n="heroText">all in one bot for darian!</p>
+            <div style="margin-top:18px;" class="buttons">
+              <a class="primary-btn" data-link="invite" data-i18n="addButton">Add to Server</a>
+              <a class="ghost-btn" data-link="support" data-i18n="supportButton">Support Server</a>
+              <a class="ghost-btn" data-link="vote" data-i18n="voteButton">Vote</a>
+            </div>
+          </div>
+          <div class="panel">
+            <h2 data-i18n="navigationTitle">Navigation</h2>
+            <div style="margin-top:12px; display:flex; flex-direction:column; gap:8px;">
+              <a class="ghost-btn" data-link="privacy" data-i18n="privacyLink">Privacy Policy</a>
+              <a class="ghost-btn" data-link="tos" data-i18n="tosLink">Terms of Service</a>
+              <a class="ghost-btn" href="features.html" data-page="features" data-i18n="featuresLink">Features</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid">
+          <div class="card panel">
+            <h3 data-i18n="overviewTitle">Overview</h3>
+            <p class="muted" data-i18n="overviewText">Comprehensive Discord bot providing moderation, music streaming, and community management tools for your server.</p>
+          </div>
+          <div class="card panel">
+            <h3 data-i18n="capabilitiesTitle">Capabilities</h3>
+            <p class="muted" data-i18n="capabilitiesText">Automated moderation, high-quality audio playback, event management, and role administration.</p>
+          </div>
+          <div class="card panel">
+            <h3 data-i18n="supportTitle">Support</h3>
+            <p class="muted" data-i18n="supportText">Access our support portal or contact the development team for assistance with setup and configuration.</p>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="/assets/dashboard.js" defer></script>
+  </body>
+</html>

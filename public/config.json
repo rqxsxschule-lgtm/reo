@@ -1,12 +1,13 @@
 {
   "BOT_NAME": "Darian Bot",
   "BOT_DESCRIPTION": "all in one bot für darian!",
-  "WEBSITE": "https://example.com/reo",
-  "SUPPORT_EMAIL": "support@example.com",
+  "WEBSITE": "https://darian-bot.vercel.app/en/",
+  "DASHBOARD": "https://reo-production-07b8.up.railway.app/dashboard",
+  "SUPPORT_EMAIL": "guesstrowweisetauben@mail.de",
   "PRIVACY_POLICY": "/privacy.html",
   "TERMS_OF_SERVICE": "/tos.html",
   "BOT_ID": "1495642966834942023",
   "INVITE": "https://discord.com/oauth2/authorize?client_id=1495642966834942023",
-  "SUPPORT_SERVER": "https://example.com/reo/support",
+  "SUPPORT_SERVER": "https://discord.gg/mbfknU5MBR",
   "VOTE": "https://top.gg/bot/1495642966834942023/vote"
 }

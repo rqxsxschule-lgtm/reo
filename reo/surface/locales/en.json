@@ -1,0 +1,23 @@
+{
+  "surface": "Surface",
+  "discord_required": "Discord required",
+  "logout": "Logout",
+  "login": "Login",
+  "login_auth_missing": "Dashboard authentication is not configured.",
+  "servers": "Servers",
+  "overview": "Overview",
+  "security": "Security",
+  "moderation": "Moderation",
+  "music": "Music",
+  "commands": "Commands",
+  "logs": "Logs",
+  "giveaways": "Giveaways",
+  "tickets": "Tickets",
+  "welcomer": "Welcomer",
+  "save_settings": "Save general settings",
+  "prefix": "Prefix",
+  "language": "Language",
+  "add_to_server": "Add to Server",
+  "support": "Support Server",
+  "vote": "Vote"
+}

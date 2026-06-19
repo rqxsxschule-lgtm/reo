@@ -1,0 +1,17 @@
+{
+  "dashboardLabel": "Dashboard",
+  "heroText": "all in one bot for darian!",
+  "addButton": "Add to Server",
+  "supportButton": "Support Server",
+  "voteButton": "Vote",
+  "navigationTitle": "Navigation",
+  "privacyLink": "Privacy Policy",
+  "tosLink": "Terms of Service",
+  "featuresLink": "Features",
+  "overviewTitle": "Overview",
+  "overviewText": "Comprehensive Discord bot providing moderation, music streaming, and community management tools for your server.",
+  "capabilitiesTitle": "Capabilities",
+  "capabilitiesText": "Automated moderation, high-quality audio playback, event management, and role administration.",
+  "supportTitle": "Support",
+  "supportText": "Access our support portal or contact the development team for assistance with setup and configuration."
+}
